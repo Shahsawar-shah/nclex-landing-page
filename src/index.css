@@ -1,0 +1,87 @@
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Custom base styles */
+@layer base {
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Body styles */
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #111827;
+  }
+
+  /* Headings use Poppins */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  /* Container */
+  .container-custom {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+    }
+  }
+
+  /* Gradient background */
+  .gradient-bg {
+    background: linear-gradient(to bottom right, #eff6ff, #ffffff, #dbeafe);
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  /* Text gradient */
+  .text-gradient {
+    background: linear-gradient(to right, #2563eb, #1e3a8a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
