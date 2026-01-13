@@ -76,7 +76,7 @@ function Navbar() {
                 <span className="text-blue-600 font-bold text-xl">⭕</span>
               </div>
               {/* Logo Text */}
-              <span className="text-white font-bold text-xl">Bootcamp.com</span>
+              <span className="text-white font-bold text-xl">NCLEX PRO</span>
             </Link>
 
             {/* ========== DESKTOP NAVIGATION MENU ========== */}
